@@ -1,28 +1,57 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    background-color: #0072bc;
+    color: white;
+    font-size: 180%;
+}
+
 .quiz {
+    width: 100%;
     &__container {
-        width: 945px;
-        height: 473px;
+        width: 100%;
+        height: 500px;
         overflow: hidden;
+        position: relative;
+        margin: 0;
+        padding: 0;
     }
     &__item,
     &__item--final {
         position: absolute;
+        text-align: center;
+        font-family: Lato, Arial, Helvetica, sans-serif;
+        font-size: 180%;
         top: 0;
         left: 0;
         display: none;
+        width: 100%;
         &-question {
             position: absolute;
             top: 0;
             left: 0;
+            width: 100%;
+            img {
+                width: 100%;
+            }
         }
         &-answer {
             position: absolute;
             top: 0;
             left: 0;
+            width: 100%;
             display: none;
+            img {
+                width: 100%;
+            }
         }
     }
     &__controls {
+        display: flex;
         &.locked #migrant,
         &.locked #refugee {
             display: none;
@@ -32,8 +61,38 @@
         }
     }
     &__control {
+        flex: 1 1 auto;
+        background-color: #0072bc;
+        color: white;
+        font-family: Lato, Arial, Helvetica, sans-serif;
+        font-size: 180%;
+        width: 30%;
+        border: none;
+        padding: 12px 6px;
+        vertical-align: center;
+        margin: 20px;
+        text-align: center;
         &#next {
             display: none;
+        }
+    }
+    &__mini-score {
+        display: flex;
+        opacity: 0;
+        &.visible {
+            opacity: 1;
+        }
+        &--container {
+            display: flex;
+            text-align: center;
+            color: black;
+            font-family: Lato, Arial, Helvetica, sans-serif;
+            font-size: 180%;
+            width: 20%;
+            height: 3em;
+            flex: 1 1 auto;
+            margin: 0 auto;
+            justify-content: center;
         }
     }
     &__score {}

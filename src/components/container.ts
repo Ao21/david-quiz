@@ -33,12 +33,13 @@ export class Container {
             this.showInCorrectAnswer()
         }
         this.disableControls();
-        $('.quiz__score').text(this.scoreCount);
+        $('.quiz__score').text(`Answers correct: ${this.scoreCount}`);
 
     }
 
     disableControls() {
         $('.quiz__controls').addClass('locked');
+        $('.quiz__mini-score').addClass('visible');
     }
 
 
