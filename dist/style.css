@@ -1,0 +1,2 @@
+.quiz__container{width:945px;height:473px;overflow:hidden}.quiz__item,.quiz__item--final{position:absolute;top:0;left:0;display:none}.quiz__item--final-question,.quiz__item-question{position:absolute;top:0;left:0}.quiz__item--final-answer,.quiz__item-answer{position:absolute;top:0;left:0;display:none}.quiz__controls.locked #migrant,.quiz__controls.locked #refugee{display:none}.quiz__controls.locked #next{display:block}.quiz__control#next{display:none}.base{color:red}
+/*# sourceMappingURL=style.css.map*/

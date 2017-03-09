@@ -1,0 +1,40 @@
+.quiz {
+    &__container {
+        width: 945px;
+        height: 473px;
+        overflow: hidden;
+    }
+    &__item,
+    &__item--final {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        &-question {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        &-answer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+        }
+    }
+    &__controls {
+        &.locked #migrant,
+        &.locked #refugee {
+            display: none;
+        }
+        &.locked #next {
+            display: block;
+        }
+    }
+    &__control {
+        &#next {
+            display: none;
+        }
+    }
+    &__score {}
+}
