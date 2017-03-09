@@ -2,6 +2,7 @@
 
 1. Install NodeJS
 2. npm install -g webpack (in terminal)
+3. npm install
 
 ### Runing
 
