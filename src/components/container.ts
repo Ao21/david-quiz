@@ -59,10 +59,10 @@ export class Container {
             this.selectedItem = this.quizItems.shift();
             $(this.selectedItem).show();    
         } else {
-            $('.quiz__item').hide();
+            
+            $('.quiz__item, .quiz__controls').hide();
             $('.quiz__item--final').show();
             $('.quiz__mini-score').hide();
-            this.disableControls();
             
         }
         
