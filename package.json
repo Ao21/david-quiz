@@ -22,7 +22,7 @@
     "webpack-dev-server": "^2.4.1"
   },
   "scripts": {
-    "build": "webpack",
+    "build": "webpack -p",
     "start": "webpack-dev-server --open"
   },
   "author": "",

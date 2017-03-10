@@ -36,10 +36,12 @@ module.exports = {
 
     resolve: {
         extensions: [".tsx", ".ts", ".js"],
-        alias: {
-            jquery: "jquery/src/jquery",
-            lodash: "lodash/lodash"
-        }
+        // alias: {
+        //     jquery: "jquery/src/jquery",
+        // }
+    },
+    externals: {
+        jquery: 'jQuery'
     },
     plugins: [
         new CheckerPlugin(),
