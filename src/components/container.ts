@@ -12,7 +12,7 @@ export class Container {
 
     init() {
         this.quizItems = $('.quiz__item').toArray();
-        // this.quizItems = shuffleArray(this.quizItems);
+        this.quizItems = shuffleArray(this.quizItems);
         $('button#migrant').click(this.handleMigrant)
         $('button#refugee').click(this.handleRefugee)
         $('button#next').click(this.getNextQuestion)
