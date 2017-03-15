@@ -26,7 +26,11 @@ export class Container {
     }
 
     checkAnswer(answer: string) {
-        if (answer === $(this.selectedItem).data().answer) {
+        let itemAnswer = 'migrant';
+        if($(this.selectedItem).hasClass('answer-refugee')) {
+            itemAnswer = 'refugee';
+        }
+        if (answer === itemAnswer) {
             this.showCorrectAnswer();
             this.scoreCount++;
         } else {
